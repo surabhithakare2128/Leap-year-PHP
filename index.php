@@ -15,14 +15,32 @@ echo $date . "<br><br>";
 
 echo "The result of the comparision is: <br>";
 
-if(strcmp($date, $tar > 0)){
+if(strcmp($date, $tar) > 0){
 	echo "The future";
 }
-elseif(strcmp($date, $tar < 0)){
+elseif(strcmp($date, $tar) < 0){
 	echo "The past";
 }
 else{
 	echo "Oops";
 }
+
+echo "<br><br>The position of '/' is: <br>";
+
+$last = 0;
+$position = array();
+$find = "/";
+
+while (($last = strpos($date, $find, $last))!== false) {
+	$position[] = $last;
+        $last = $last + strlen($find);
+}
+
+foreach ($position as $value) {
+	echo $value ." ";
+}
+
+
+
 
 ?>
