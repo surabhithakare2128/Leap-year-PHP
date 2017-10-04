@@ -43,7 +43,8 @@ foreach ($position as $value) {
 echo "<br><br>The number of words in " . $date . " are: <br> ";
 echo str_word_count($date);
 
-
+echo "<br><br>The length of " . $date . " is: <br>";
+echo strlen($date);
 
 
 ?>
