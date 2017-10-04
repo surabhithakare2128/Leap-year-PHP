@@ -49,4 +49,8 @@ echo strlen($date);
 echo "<br><br>The ascii value of first character of  " . $date . " is: <br>";
 echo ord($date);
 
+echo "<br><br>The last two characters of  " . $date . " is: <br>";
+echo substr($date, -2);
+
+
 ?>
