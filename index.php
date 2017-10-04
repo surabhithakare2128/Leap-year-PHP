@@ -52,5 +52,8 @@ echo ord($date);
 echo "<br><br>The last two characters of  " . $date . " is: <br>";
 echo substr($date, -2);
 
+echo "<br><br>The results after breaking " . $date . " into array is: <br>";
+$arr = explode("/", $date);
+echo implode($arr, ' ');
 
 ?>
