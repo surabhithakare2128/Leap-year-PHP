@@ -11,8 +11,18 @@ print_r($year);
 
 echo "<br><br>Replacing '-' with '/' in " . $date . "<br>";
 $date =  date('Y/m/d', time());
-echo $date;
+echo $date . "<br><br>";
 
+echo "The result of the comparision is: <br>";
 
+if(strcmp($date, $tar > 0)){
+	echo "The future";
+}
+elseif(strcmp($date, $tar < 0)){
+	echo "The past";
+}
+else{
+	echo "Oops";
+}
 
 ?>
