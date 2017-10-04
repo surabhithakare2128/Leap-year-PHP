@@ -40,6 +40,9 @@ foreach ($position as $value) {
 	echo $value ." ";
 }
 
+echo "<br><br>The number of words in " . $date . " are: <br> ";
+echo str_word_count($date);
+
 
 
 
