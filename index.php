@@ -46,5 +46,7 @@ echo str_word_count($date);
 echo "<br><br>The length of " . $date . " is: <br>";
 echo strlen($date);
 
+echo "<br><br>The ascii value of first character of  " . $date . " is: <br>";
+echo ord($date);
 
 ?>
