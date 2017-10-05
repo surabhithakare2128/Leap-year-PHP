@@ -56,4 +56,23 @@ echo "<br><br>The results after breaking " . $date . " into array is: <br>";
 $arr = explode("/", $date);
 echo implode($arr, ' ');
 
+echo "<br><br>";
+echo "The years in the array are: <br>";
+foreach ($year as $value){
+	echo  $value . " ";
+}
+
+echo "<br><br>";
+
+foreach ($year as $i){
+	if((0 == $i % 4) and (0 != $i % 100) or (0 == $i % 400)){
+		echo "$i is  true i.e it is a leap year ";	
+	}
+	else{
+		echo "$i is false i.e it isn't a leap year ";
+	}
+}
+
+
+
 ?>
